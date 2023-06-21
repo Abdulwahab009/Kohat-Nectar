@@ -1,0 +1,19 @@
+{
+  "name": "kohatnectar",
+  "version": "1.0.0",
+  "description": "The city of Kohat is famous for its delicious fruit varieties, especially Guavas. Almost everyone from KPK knows the value of a Kohat Guava and craves the taste of it. Apart from guavas, Kohat also has other fruit varieties such oranges. But finding the right variety of and identifying the right variety, the seasonality and availability of these fruits is a challenge not only for the people outside of Kohat but the residents of Kohat as well. We aim to incorporate some expert knowledge from the growers of these fruits highlighting the salient features that can be used to identify the local fruits of Kohat. The main aim, however, is to provide a platform for presenting the local natural products of Kohat to the world.  The interface will provide pictorial information about the different fruit varieties, along the necessary details, and a map-based visualization of the data collected from various sources, highlighting their locations and availability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wahab",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
