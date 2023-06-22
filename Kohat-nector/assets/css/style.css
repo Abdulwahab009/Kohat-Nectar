@@ -1,0 +1,928 @@
+/* =============================================
+                General Style
+================================================ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    min-height: 100%;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0px 20px 0px;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0px;
+}
+.btn{
+    background-color: #50a002;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 18px;
+}
+button.normal{
+    font-size: 14px;
+    background-color:white;
+    color: black;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2sec;
+}
+button.white{
+    font-size: 13px;
+    background-color:transparent;
+    color: white;
+    font-weight: 600;
+    padding: 11px 18px;
+    border:1px solid white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2sec;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.camera{
+    display: none;
+   
+}
+
+/* =============================================
+                General Style ends here
+================================================ */
+/* =============================================
+                Header Style start here
+================================================ */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #f1f1f1;
+    /* background-color:#545454; */
+    /* background-color: #ff9aaa; */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+.header .logo a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header .logo span{
+    color:#83d43e;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px; 
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,#navbar li a.active{
+    color: #83d43e;
+}
+#navbar li a.active::after,#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #83d43e;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile,#close{
+    display: none;
+}
+/* =============================================
+                Header Style ends here
+================================================ */
+/* =============================================
+                Hero Style start here
+================================================ */
+.hero{
+    background-image: url("/assets/images/kohatnecktar\ greybg.png");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero h1{
+    color: #83d43e;
+}
+.hero button{
+    background-color: #f1f1f1;
+    color: #83d43e;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    padding: 14px 80px 14px 65px;
+    transition: all 0.3s ease;
+}
+.hero button:hover{
+    box-shadow: 15px 5px 15px rgba(0,0,0,0.09);
+}
+/* =============================================
+                Hero Style ends here
+================================================ */
+/* =============================================
+                Feature Style start here
+================================================ */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#feature .container{
+    display: flex;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 25px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box .icon{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box .icon i{
+    font-size: 40px;
+    color: #50a002;
+    margin-bottom: 10px;
+
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    border-radius: 4px;
+    line-height: 1;
+    color:#088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+/* =============================================
+                Feature Style ends here
+================================================ */
+/* =============================================
+                Feature-product Style start here
+================================================ */
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0px;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0px;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    font-size: 14px;
+    color: #1a1a1a;
+    padding-top: 7px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243 181 25);
+}
+#product1 .pro .des h4{
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+    padding-top: 7px;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* =============================================
+                Feature-product Style ends here
+================================================ */
+/* =============================================
+                Gallery images Style starts here
+================================================ */
+.img-grid{
+    --gap:16px;
+    --num-cols:4;
+    --row-height:300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+.img-grid>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-grid-col-2{
+    grid-column: span 2;
+}
+.img-grid-row-2{
+    grid-row: span 2;
+}
+/* anything under 1024px */
+@media screen and(max-width:1024px) {
+    .img-grid{
+        --num-cols:2;
+        --row-height:200px;
+    }
+}
+/* =============================================
+                Gallery Images Style ends here
+================================================ */
+/* =============================================
+                Contact us Style start here
+================================================ */
+/* .c-container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+} */
+.c-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    display: flex;
+    padding: 0 3rem 0 3rem;
+    height: 80v;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+.map iframe{
+    width: 30rem;
+    height: 20rem;
+}
+.c-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.2em;
+    outline: none;
+    border: 2px solid #83d43e;
+    border-radius: 8px;
+    font-size: 16px;
+}
+textarea{
+    height: 4rem!important;
+}
+.c-right button{
+width: 10rem;
+padding: 10px;
+color: #83d43e;
+border: 1px solid #83d43e;
+background-color: #f1f1f1;
+}
+.c-right button:hover{
+background-color: #83d43e;
+color: white;
+}
+/* =============================================
+               Contact us Style ends here
+================================================ */
+/* =============================================
+                Banner Style start here
+================================================ */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/assets/images/banner/b2.png");
+    width: 100%;
+    height: 40vh;
+    background-position:center ;
+    background-size: cover;
+}
+#banner h4{
+    font-size: 18px;
+}
+#banner h2{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+#banner h2 span{
+    color: #83d43e;
+}
+#banner button{
+    color: #83d43e;
+    border: 1px solid #83d43e;
+    background-color: #f1f1f1;
+}
+#banner button:hover{
+    background-color: #83d43e;
+    color: white;
+}
+/* =============================================
+                Banner Style ends here
+================================================ */
+/* =============================================
+               Small-Banner Style start here
+================================================ */
+#sm-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/assets/images/banner/b17.jpg");
+    min-width: 680px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url("/assets/images/banner/b10.jpg");
+}
+#sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/assets/images/banner/b7.jpg");
+    min-width: 32%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box-2{
+    background-image: url("/assets/images/banner/b4.jpg");
+}
+#banner3 .banner-box-3{
+    background-image: url("/assets/images/banner/b18.jpg");
+}
+#banner3 h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* =============================================
+                Small-Banner Style ends here
+================================================ */
+/* =============================================
+                Newsletter Style start here
+================================================ */
+#newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/assets/images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0px 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* =============================================
+                Newsletter Style ends here
+================================================ */
+
+/* ==================================================
+  About us page styles start here
+======================================================*/
+.about_hero{
+    background-color: #596470;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+    
+}
+.about_hero h1{
+    color: #fff;
+}
+.about_hero p{
+    margin-top: 20px;
+    width: 40%;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 17px;
+}
+.about{
+    background-position: center;
+    background-size: 100%;
+    height: 85vh;
+    width: 80%;
+    margin:40px 0px 40px 10%;
+    display: flex;
+    padding: 40px 80px;
+}
+.about h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #50a002;
+}
+.about .c-section{
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    padding: 40px 80px;
+    text-align: center;
+}
+.about .form{
+    flex: 70%;
+    background-color: #f8f8f8;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    padding: 40px 80px;
+    text-align: center;
+}
+input[type=text], input[type=email], textarea {
+    width: 100%; /* Full width */
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.03);
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+.about .c-info{
+    flex: 30%;
+    background: linear-gradient(to top left, #6c7e8e, #454b52);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    padding: 40px;
+}
+.c-info h1{
+    color: #fff;
+}
+.c-info .info-txt{
+    margin-top: 40px;
+}
+.c-info .info-txt i{
+    margin-right: 10px;
+}
+.c-info p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.c-info a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.c-info a:hover{
+    color: #50a002;
+}
+.social-icons{
+    margin-top: 70px;
+    text-align: center;
+}
+.social-icons i{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+}
+.social-icons i:hover{
+    color: #50a002;
+}
+
+
+/* =============================================
+                Footer Style start here
+================================================ */
+footer{
+    border-top: 1px solid #83d43e;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.footer-row .logo{
+    margin-bottom: 30px;
+}
+.footer-row h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.footer-row p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+.footer-row a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    padding-bottom: 10px;
+}
+.footer-row .follow{
+    margin-top: 20px;
+}
+.footer-row .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+.footer-row .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+.footer-row .follow i:hover, .footer-row a:hover{
+    color: #088178;
+}
+footer .copyright p{
+    width: 100%;
+    text-align: center;
+}
+/* =============================================
+                Footer Style ends here
+================================================ */
+/* =============================================
+                Media queries start here
+================================================ */
+@media (max-width:810px) {
+    .section-p1{
+        padding: 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0px 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: #222;
+    }
+    #lg-bag{
+        display: none;
+    }
+    
+    .hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0px 80px;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #banner{
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0px 40px;
+    }
+    #banner3 .banner-box{
+        width: 28%;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+    .footer-row{
+        display: none;
+    }
+    .camera{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        z-index: 1000;
+        bottom: 0%;
+    }
+    .camera i{
+        font-size: 30px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+        color: #83d43e;
+    }
+}
+@media (max-width:477px) {
+    .section-p1{
+        padding: 20px;
+    } 
+    .header{
+        padding: 10px 30px;
+     }
+     h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    
+     .hero{
+        background-position: 55%;
+        padding: 0px 20px;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0px 0px 15px 0px;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3{
+        padding: 0px 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    #newsletter  {
+        padding: 40px 20px;
+    }
+    .footer-row{
+        display: none;
+    }
+    footer .copyright{
+        text-align: start;
+    }
+    .camera{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 2000;
+        bottom: 0%;
+        background-color: #efeaea;
+        padding: 10px;
+        margin: auto;
+    }
+    .camera i{
+        font-size: 30px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+        color: #83d43e;
+    }
+}
+/* =============================================
+                Media Quiries ends here
+================================================ */
